@@ -91,9 +91,6 @@
                         <div class="menu-icon">
                             <a href="#"></a>
                         </div>
-                        <div class="searchBtn">
-                            <a href="#" class="showSearch"></a>
-                        </div>
                     </div>
                     <ul class="navigationList clearfix">
                         <li class="home">
@@ -209,54 +206,9 @@
                 </div>
                 <div class="left-bar-link"><span>Magazine</span></div>
             </div>
-            <!-- <div class="right-bar-container">
-                <div class="right-close" style="background: url('/assets/images/lb_close.png') no-repeat;"></div>
-                <div class="serve-blocks">
-                    <a href="" class="serve-block">
-                        <div class="serve-block-img">
-                            <img src="/assets/images/rewamp_images/business-img.jpg">
-                        </div>
-                        <div class="serve-block-content">
-                            <p>The variable density tunnel boring machine of the Grand Paris Express</p>
-                        </div>
-                    </a>
-                    <a href="" class="serve-block">
-                        <div class="serve-block-img">
-                            <img src="/assets/images/rewamp_images/business-img.jpg">
-                        </div>
-                        <div class="serve-block-content">
-                            <p>The variable density tunnel boring machine of the Grand Paris Express</p>
-                        </div>
-                    </a>
-                    <a href="" class="serve-block">
-                        <div class="serve-block-img">
-                            <img src="/assets/images/rewamp_images/business-img.jpg">
-                        </div>
-                        <div class="serve-block-content">
-                            <p>The variable density tunnel boring machine of the Grand Paris Express</p>
-                        </div>
-                    </a>
-                    <a href="" class="serve-block">
-                        <div class="serve-block-img">
-                            <img src="/assets/images/rewamp_images/business-img.jpg">
-                        </div>
-                        <div class="serve-block-content">
-                            <p>The variable density tunnel boring machine of the Grand Paris Express</p>
-                        </div>
-                    </a>
-                    <a href="" class="serve-block">
-                        <div class="serve-block-img">
-                            <img src="/assets/images/rewamp_images/business-img.jpg">
-                        </div>
-                        <div class="serve-block-content">
-                            <p>The variable density tunnel boring machine of the Grand Paris Express</p>
-                        </div>
-                    </a>
-                </div>
-            </div>
             <div class="right-bar">
-                <div class="right-bar-link"><span>Other Websites</span></div>
-            </div> -->
+                <div class="right-bar-link"><span><a href="/assets/images/Construction.JPG" target="_blank">Other Websites</a></span></div>
+            </div>
             <div class="head-container">
                 <div class="t-w_bg-overlay"></div>
                 <div class="rowContent">
@@ -286,17 +238,38 @@
                                                 <img src="/assets/images/sld-img-3.jpg"
                                                     alt="UNLOCKING ENERGY">
                                             </div>
+                                            <div class="energy-details">
+                                                <h3>Defence &amp; Aerospace</h3>
+                                                <br>
+                                                <p>L&amp;T's innovation backed equipment &amp;</p>
+                                                <p>systems span all frontiers.</p>
+                                                <br>
+                                            </div>
                                         </div>
                                         <div class="energy-item">
                                             <div class="energy-img" style="margin: auto;">
                                                 <img src="/assets/images/sld-img-2.jpg"
                                                     alt="UNLOCKING ENERGY">
                                             </div>
+                                            <div class="energy-details">
+                                                <h3>Defence &amp; Aerospace</h3>
+                                                <br>
+                                                <p>L&amp;T's innovation backed equipment &amp;</p>
+                                                <p>systems span all frontiers.</p>
+                                                <br>
+                                            </div>
                                         </div>
                                         <div class="energy-item">
                                             <div class="energy-img" style="margin: auto;">
                                                 <img src="/assets/images/sld-img-1.jpg"
                                                     alt="UNLOCKING ENERGY">
+                                            </div>
+                                            <div class="energy-details">
+                                                <h3>Defence &amp; Aerospace</h3>
+                                                <br>
+                                                <p>L&amp;T's innovation backed equipment &amp;</p>
+                                                <p>systems span all frontiers.</p>
+                                                <br>
                                             </div>
                                         </div>
         
@@ -593,6 +566,7 @@
                 $(".left-bar-container").toggleClass("active");
                 $(".left-bar-link").toggleClass("active");
                 $("body").toggleClass("active");
+                $(".left-bar").toggleClass("active");
             });
             $(".lb-close").click(function (e) {
                 e.stopPropagation();
@@ -600,22 +574,8 @@
                 $(".left-bar-container").removeClass("active");
                 $("body").removeClass("active");
                 $(".left-bar-link").removeClass("active");
+                $(".left-bar").removeClass("active");
             });
-            $(".right-bar-link").click(function (e) {
-                e.stopPropagation();
-                $(".right-close").toggleClass("active");
-                $(".right-bar-container").toggleClass("active");
-                $(".right-bar-link").toggleClass("active");
-                $("body").toggleClass("active");
-            });
-            $(".lb-close").click(function (e) {
-                e.stopPropagation();
-                $(".right-close").removeClass("active");
-                $(".right-bar-container").removeClass("active");
-                $("body").removeClass("active");
-                $(".right-bar-link").removeClass("active");
-            });
-
         });
 
         $(document).on('touchstart', function (e) {
